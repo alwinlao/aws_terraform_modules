@@ -34,3 +34,8 @@ variable "db_remote_state_key" {
   type        = string
 }
 
+variable "custom_tags" {
+  description = "Custom tags on the Instances in the ASG"
+  type = map(string)
+  default = {}
+}
